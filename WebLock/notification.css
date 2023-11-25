@@ -1,0 +1,10 @@
+body > div {
+    white-space: nowrap;
+    cursor: default;
+    font-size: 125%;
+}
+
+body {
+    background-color: #323843;
+    color: #ffffff;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      Copyright (c) 2023 Perraco Labs. All rights reserved.
+      This work is licensed under the terms of the MIT license.
+      For a copy, see <https://opensource.org/licenses/MIT>.
+    -->
+    <title>WebLock</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+      body:not(.ready) #widget-list-sites::placeholder,
+      body:not(.ready) #controls {
+        opacity: 0;
+      }
+
+      body:not(.ready) #controls {
+        visibility: hidden;
+      }
+
+      #widget-list-sites {
+        outline: none;
+        font-size: inherit;
+        line-height: inherit;
+        white-space: pre;
+        background-color : #d1d1d1;
+        resize: none;
+      }
+
+      #widget-list-sites::placeholder {
+        color: rgb(99, 99, 99);
+        font-style: italic;
+        font-size: 17px;
+        line-height: normal;
+      }
+
+      #controls {
+        transition: opacity 1s;
+      }
+
+      #controls > div {
+        display: flex;
+        align-items: center;
+        vertical-align: middle;
+      }
+
+      label {
+        margin-right: .2em;
+      }
+
+      select {
+        font-size: inherit;
+      }
+
+      input[type=checkbox] {
+        width: 1.5em;
+        height: 1.5em;
+        background-color : #d1d1d1;
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>WebLock</h2>
+
+    <div id="controls">
+      <label for="widget-enabled-state">Activate&nbsp;<input id="widget-enabled-state" type="checkbox"></label>
+      <button style="float: right; height: 2em;" id="widget-pin">PIN</button>
+    </div>
+
+    <p>
+      <textarea id="widget-list-sites" rows="16" cols="45" spellcheck="false" maxlength="2048"></textarea>
+      <br>
+      <small>
+        &#8226; One url per line
+        <br>
+        &#8226; Prefix with <strong></strong><code>!</code></strong> <i>(exclamation mark)</i> to exclude from the rule <i>(not block)</i>
+      </small>
+    </p>
+
+    <script src="page_options.js" type="module"></script>
+  </body>
+</html>

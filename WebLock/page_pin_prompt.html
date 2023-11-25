@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+            Copyright (c) 2023 Perraco Labs. All rights reserved.
+            This work is licensed under the terms of the MIT license.
+            For a copy, see <https://opensource.org/licenses/MIT>.
+        -->
+        <title>PIN</title>
+        <link rel="stylesheet" href="common.css">
+        <style>
+            body {
+                padding-bottom: 50px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            button {
+                float: right;
+                margin-top: 8px;
+                margin-left: 8px;
+                height: 2.0em;
+            }
+          </style>
+    </head>
+    <body>
+
+        <p>
+            PIN
+            <br>
+            <input id="widget-pin" type="password" spellcheck="false" maxlength="1024" autofocus></input>
+        </p>
+                    
+        <div id="controls">
+            <button id="widget-ok">OK</button>
+            <button id="widget-cancel">Cancel</button>
+        </div>
+
+        <script src="page_pin_prompt.js" type="module"></script>
+
+    </body>
+</html>

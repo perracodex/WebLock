@@ -1,0 +1,23 @@
+html {
+  font-size: 26px;
+  color: white;
+}
+
+body {
+  background-color: #2D2D2D;
+  margin: 0 auto;
+  padding-top: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: Calibri, Helvetica, Arial, sans-serif;
+  line-height: 125%;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}

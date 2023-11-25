@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+            Copyright (c) 2023 Perraco Labs. All rights reserved.
+            This work is licensed under the terms of the MIT license.
+            For a copy, see <https://opensource.org/licenses/MIT>.
+        -->
+        <title>New PIN</title>
+        <link rel="stylesheet" href="common.css">
+        <style>
+            body {
+                padding-top: 5px;
+                padding-bottom: 50px;
+                padding-left: 15px;
+                padding-right: 15px;
+                width: 420px;
+            }
+            button {
+                float: right;
+                margin: 8px;
+                height: 2.0em;
+            }
+          </style>
+    </head>
+    <body>
+        <p>
+            <h2>WebLock PIN</h2>
+            <small>
+                &#8226; The PIN is stored locally on this machine only.
+                <br>
+                &#8226; If you forget it, remove and reinstall the extension.
+                <br>
+                &#8226; To clear the current PIN, leave it blank and press save.
+                <br>
+                &#8226; If the browser is reinstalled, the PIN may get deleted.
+              </small>
+        </p>
+
+        <p>
+            <div>
+                New PIN:
+                <br>
+                <input  id="widget-pin-first" type="password" spellcheck="false" maxlength="1024"></input>
+                <br>
+                Repeat:
+                <br> 
+                <input  id="widget-pin-second" type="password" spellcheck="false" maxlength="1024"></input>
+            </div>
+        </p>
+                    
+        <div id="controls">
+            <button id="widget-pin-save">Save</button>
+            <button id="widget-pin-cancel">Cancel</button>
+        </div>
+
+        <script src="page_pin_create.js" type="module"></script>
+
+    </body>
+</html>
